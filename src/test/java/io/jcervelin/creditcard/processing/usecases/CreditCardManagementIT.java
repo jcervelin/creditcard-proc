@@ -1,13 +1,13 @@
 package io.jcervelin.creditcard.processing.usecases;
 
+import io.jcervelin.creditcard.processing.CreditcardProcessingApplication;
 import io.jcervelin.creditcard.processing.domains.CreditCard;
 import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -15,8 +15,7 @@ import java.math.BigInteger;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@DataMongoTest
-@ComponentScan(basePackages = {"io.jcervelin.creditcard.processing"})
+@SpringBootTest(classes = {CreditcardProcessingApplication.class})
 public class CreditCardManagementIT {
 
     @Autowired
@@ -35,7 +34,7 @@ public class CreditCardManagementIT {
     @Test
     public void add() {
         final CreditCard juliano = CreditCard.builder()
-                .cardNumber(BigInteger.valueOf(474131370495084L))
+                .cardNumber(BigInteger.valueOf(4074815635414968L))
                 .name("Madison Garcia")
                 .build();
         final CreditCard carol = CreditCard.builder()

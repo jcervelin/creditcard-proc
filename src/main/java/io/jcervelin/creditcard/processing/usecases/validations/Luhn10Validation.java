@@ -7,16 +7,19 @@ import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
 @Component
+/**
+ * Algorithm Luhn used to verify if the creditcard number is valid
+ */
 public class Luhn10Validation implements Validator {
 
     private static final String LUHN10_ERROR_MESSAGE = "The number [%s] is not valid";
 
     public void validate(final CreditCard creditCard) {
         final String cardNumber = String.valueOf(creditCard.getCardNumber());
-        long sum = 0;
+        int sum = 0;
         boolean alternate = false;
         for (int i = cardNumber.length() - 1; i >= 0; i--) {
-            long n = Long.parseLong(cardNumber.substring(i, i + 1));
+            int n = Integer.parseInt(cardNumber.substring(i, i + 1));
             if (alternate) {
                 n *= 2;
                 if (n > 9) {
