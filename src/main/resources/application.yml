@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: creditcard-processing
+  # Mongo
+  data:
+    mongodb:
+      database: dbCreditcard
+      port: 27017
+      host: localhost
+
