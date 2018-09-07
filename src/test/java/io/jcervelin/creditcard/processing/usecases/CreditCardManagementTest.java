@@ -1,7 +1,7 @@
 package io.jcervelin.creditcard.processing.usecases;
 
 import io.jcervelin.creditcard.processing.domains.CreditCard;
-import io.jcervelin.creditcard.processing.domains.InvalidCreditCardException;
+import io.jcervelin.creditcard.processing.domains.exceptions.InvalidCreditCardException;
 import io.jcervelin.creditcard.processing.gateways.mongo.CreditCardRepository;
 import io.jcervelin.creditcard.processing.usecases.validations.CreditCardValidations;
 import org.assertj.core.api.Assertions;

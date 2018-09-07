@@ -1,4 +1,4 @@
-package io.jcervelin.creditcard.processing.swagger;
+package io.jcervelin.creditcard.processing.configs.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

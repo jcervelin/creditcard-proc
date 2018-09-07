@@ -1,7 +1,7 @@
 package io.jcervelin.creditcard.processing.usecases.validations;
 
 import io.jcervelin.creditcard.processing.domains.CreditCard;
-import io.jcervelin.creditcard.processing.domains.InvalidCreditCardException;
+import io.jcervelin.creditcard.processing.domains.exceptions.InvalidCreditCardException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

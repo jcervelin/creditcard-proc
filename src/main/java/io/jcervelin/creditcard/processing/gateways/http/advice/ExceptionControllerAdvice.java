@@ -1,7 +1,7 @@
 package io.jcervelin.creditcard.processing.gateways.http.advice;
 
-import io.jcervelin.creditcard.processing.domains.InvalidCreditCardException;
 import io.jcervelin.creditcard.processing.domains.api.ErrorResponse;
+import io.jcervelin.creditcard.processing.domains.exceptions.InvalidCreditCardException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

@@ -1,7 +1,7 @@
 package io.jcervelin.creditcard.processing.usecases.validations;
 
 import io.jcervelin.creditcard.processing.domains.CreditCard;
-import io.jcervelin.creditcard.processing.domains.InvalidCreditCardException;
+import io.jcervelin.creditcard.processing.domains.exceptions.InvalidCreditCardException;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
